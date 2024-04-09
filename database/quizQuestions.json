@@ -1,0 +1,52 @@
+[
+    {
+        "question": "Was ist die Hauptstadt von Japan?",
+        "choices": ["Tokio", "Seoul", "Peking", "Bangkok"],
+        "answer": "Tokio"
+    },
+    {
+        "question": "Welche dieser Städte ist die Hauptstadt von Kanada?",
+        "choices": ["Toronto", "Montreal", "Ottawa", "Vancouver"],
+        "answer": "Ottawa"
+    },
+    {
+        "question": "Welches dieser Länder hat Stockholm als Hauptstadt?",
+        "choices": ["Norwegen", "Finnland", "Schweden", "Dänemark"],
+        "answer": "Schweden"
+    },
+    {
+        "question": "Was bedeutet 'CPU' in der Informatik?",
+        "choices": ["Central Processing Unit", "Computer Program Unit", "Central Power Unit", "Core Processing Unit"],
+        "answer": "Central Processing Unit"
+    },
+    {
+        "question": "Welche der folgenden Optionen ist ein Speichertyp in einem Computer?",
+        "choices": ["RAM", "CPU", "GPU", "PSU"],
+        "answer": "RAM"
+    },
+    {
+        "question": "Was ist ein 'Pixel'?",
+        "choices": ["Ein Bildschirmelement", "Ein Speichertyp", "Eine Mausmarke", "Eine Maßeinheit für Entfernung"],
+        "answer": "Ein Bildschirmelement"
+    },
+    {
+        "question": "Welcher Film gewann den Oscar für den besten Film im Jahr 1994?",
+        "choices": ["Forrest Gump", "Pulp Fiction", "Schindler's Liste", "Der König der Löwen"],
+        "answer": "Forrest Gump"
+    },
+    {
+        "question": "Wer spielte die Hauptrolle in 'Der Pate'?",
+        "choices": ["Al Pacino", "Robert De Niro", "Marlon Brando", "Jack Nicholson"],
+        "answer": "Marlon Brando"
+    },
+    {
+        "question": "Welcher dieser Filme wurde von Steven Spielberg inszeniert?",
+        "choices": ["Der Herr der Ringe: Die Gefährten", "Jurassic Park", "Avatar", "Inception"],
+        "answer": "Jurassic Park"
+    },
+    {
+        "question": "Wer spielte die Hauptrolle in 'Der Herr der Ringe'?",
+        "choices": ["Daniel Radcliffe", "Elijah Wood", "Orlando Bloom", "Leonardo DiCaprio"],
+        "answer": "Elijah Wood"
+    }
+]
