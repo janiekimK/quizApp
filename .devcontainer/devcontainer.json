@@ -1,5 +1,5 @@
 {
     "name": "quizapp",
     "dockerFile": "dockerfile",
-    "postCreateCommand": "sqlite3 mydatabase.db '.read /database/create_db.sql'"
+    "postCreateCommand": "sqlite3 quiz.db '.read /workspaces/quizApp/database/create_db.sql'; sqlite3 quiz.db"
 }
