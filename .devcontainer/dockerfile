@@ -7,6 +7,9 @@ WORKDIR /app
 # Install SQLite
 RUN apt-get update && apt-get install -y sqlite3
 
+
+#RUN apt-get update && apt-get install -y nodejs
+
 # Copy package.json and package-lock.json if they exist
 COPY package*.json ./
 
@@ -16,5 +19,9 @@ RUN npm install express
 # Copy the rest of the application code
 COPY . .
 
+# Expose port 3000
+EXPOSE 3000
+
 # Run sqlite3 when the container launches
 CMD ["sqlite3"]
+
