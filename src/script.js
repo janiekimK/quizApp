@@ -4,16 +4,12 @@ document.addEventListener("DOMContentLoaded", function () {
     const submitButton = document.getElementById("submit-btn");
     let currentQuestionIndex = 0;
 
-    // Fetch quiz questions from the database
     fetch("../database/quizQuestions.json")
         .then((response) => response.json())
         .then((data) => {
-            // Display the first question
             displayQuestion(data[currentQuestionIndex]);
 
-            // Event listener for submit button
             submitButton.addEventListener("click", () => {
-                // Process answer
                 const selectedChoice = document.querySelector(
                     'input[type="radio"]:checked'
                 );
@@ -32,7 +28,6 @@ document.addEventListener("DOMContentLoaded", function () {
                     alert("Bitte wähle eine Antwort 😊");
                 }
 
-                // Load next question
                 currentQuestionIndex++;
                 if (currentQuestionIndex < data.length) {
                     displayQuestion(data[currentQuestionIndex]);
@@ -43,7 +38,6 @@ document.addEventListener("DOMContentLoaded", function () {
         })
         .catch((error) => console.error("Error fetching quiz questions:", error));
 
-    // Function to display question and choices
 function displayQuestion(questionData) {
     questionElement.textContent = questionData.question;
     choicesElement.innerHTML = "";
@@ -54,15 +48,13 @@ function displayQuestion(questionData) {
         radioInput.name = "choice";
         radioInput.value = choice;
 
-        // Add a label element for each choice
         const label = document.createElement("label");
         label.textContent = choice;
 
-        // Associate the label with the radio input
         label.htmlFor = radioInput.id;
         radioInput.id = `choice-${questionData.choices.indexOf(choice)}`;
 
-        // Append the radio input to the label
+    
         label.prepend(radioInput);
         choiceItem.appendChild(label);
         choicesElement.appendChild(choiceItem);
